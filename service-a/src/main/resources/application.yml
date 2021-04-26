@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: service-a
+  zipkin:
+    base-url: http://192.168.80.134:9411/
+  mvc:
+    static-path-pattern: /**
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:8000/eureka/
+  instance:
+    prefer-ip-address: true
